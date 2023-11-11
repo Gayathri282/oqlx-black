@@ -470,7 +470,7 @@ section{padding: 0;}
 .navbar{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #ffffff !important;
+    background-color: #000000 !important;
 }
 
 .navbar-brand {
@@ -1409,7 +1409,7 @@ svg.slider-shape{
 ====================================== */
 
 .contact-sec{
-/*     background-image: url("../images/pexels-oleksandr-p-12960383.jpg"); */
+    background-image: url("../images/pexels-oleksandr-p-12960383.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
