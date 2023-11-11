@@ -307,7 +307,7 @@ section{padding: 0;}
     display: block;
     margin-bottom: 3px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     width: 20px;
 }
 
@@ -496,7 +496,7 @@ section{padding: 0;}
 .social-icons span i{
     font-size: 13px;
     margin-left: 0;
-    background-color: transparent;
+    background-color: white;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -676,7 +676,7 @@ section{padding: 0;}
     top: 20px;
     left: 4px;
     cursor: pointer;
-    color: #444444;
+    color: #ffffff;
     z-index: 111;
     transition: .5s ease;
 }
