@@ -470,7 +470,7 @@ section{padding: 0;}
 .navbar{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: black !important;
+    background-color: #000000 !important;
 }
 
 .navbar-brand {
@@ -496,7 +496,7 @@ section{padding: 0;}
 .social-icons span i{
     font-size: 13px;
     margin-left: 0;
-    background-color: white;
+    background-color: transparent;
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -676,7 +676,7 @@ section{padding: 0;}
     top: 20px;
     left: 4px;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
     z-index: 111;
     transition: .5s ease;
 }
@@ -691,7 +691,7 @@ section{padding: 0;}
     content: ' ';
     height: 24px;
     width: 2px;
-    background: white;
+    background: rgb(255, 255, 255);
     top: 5px;
     transition: 0.5s ease;
 }
@@ -726,6 +726,7 @@ section{padding: 0;}
 
 .broad .social-icons i{
     font-size: 16px;
+    color: white;
 }
 
 .broad .brand-logo{
