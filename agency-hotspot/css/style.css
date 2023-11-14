@@ -50,7 +50,7 @@ a {color:inherit;text-decoration: none;}
 .btn.focus, .btn:focus{-webkit-box-shadow: none;box-shadow: none;}
 p:last-child{margin-bottom: 0 !important; font-family: 'Roboto', sans-serif;}
 .fa, .far, .fas{display: inline;}
-li{list-style: none;text-decoration: none;}
+/* li{list-style: none;text-decoration: none;} */
 blockquote {border-left: 2px solid;padding: 10px 15px 10px 35px;margin: 25px 0;font-size: 18px;line-height: 28px;}
 blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 .hidden{display: none;}
@@ -105,7 +105,8 @@ section{padding: 0;}
 /* Background color */
 .bg-green {background: #000000;}
 .bg-pink {background: #000000;}
-.bg-yellow {background: #000000;}
+.bg-yellow {background: #000000;    background: #000000;
+    opacity: 0.95;}
 .text-light-black {background: #000000;}
 .bg-blue {background: #000000;}
 .bg-red {background: #000000;}
@@ -905,6 +906,8 @@ svg.slider-shape{
     font-weight: bold;
 }
 
+
+
 .section-heading {
     margin-bottom: 1.5rem;
 }
@@ -986,6 +989,9 @@ svg.slider-shape{
     font-size: 48px;
     font-weight: bold;
 }
+/* .section3left .main-font {
+    margin-bottom: -70px;
+} */
 
 .parallax-box{
     text-align: center;
@@ -1095,16 +1101,24 @@ svg.slider-shape{
 /* ===================================
    Portfolio
 ====================================== */
+/* Common styles for both large and small screens */
 
-.portfolio-bg{
-    /* background-image: url("../images/pexels-cottonbro-studio-3945670.jpg"); */
-    height: 100vh;
+.portfolio-bg {
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
     margin-left: 5%;
 }
 
+.section4left .main-font {
+    margin-bottom: -70px;
+}
+/* .section4right img{
+    max-width: 100% !important;
+    height: 100vh;
+    
+} */
 .main-heading h2 {
     font-size: 48px;
     font-weight: bold;
@@ -1114,25 +1128,32 @@ svg.slider-shape{
     text-align: left;
 }
 
-.team-data-img {
+/* .team-data-img {
     overflow: inherit;
-}
+} */
 
 .portfolio-content {
     background: transparent;
     margin-top: 2rem;
+    width: 100%;
+   
 }
 
-.portfolio-content h5 {
+.portfolio-content h3 {
     font-size: 18px;
-    font-weight: normal;
-    text-align: center;
+    font-weight: 600;
+    /* text-align: center; */
 }
-
+.portfolio-content span{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 7rem;
+}
 .portfolio-content p {
     font-size: 16px;
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
 }
 
 .search-icon {
@@ -1145,11 +1166,13 @@ svg.slider-shape{
 }
 
 .single-work {
-    overflow: hidden;
     position: relative;
-    padding: 15px;
-    background-color: #ffffff;
-    transition: all .3s ease 0s;
+    /* overflow: hidden; */
+    max-width: 570px;
+    max-height: 100vh;
+    /* margin-left: 404px;
+    padding: -81px;
+    margin-top: -8rem; */
 }
 
 .single-work img {
@@ -1159,13 +1182,13 @@ svg.slider-shape{
 
 .single-work .title {
     width: 80%;
-    font-weight: normal;
+    font-weight: bold;
     color: #ffffff;
     margin: 0 0 15px 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -1194,22 +1217,26 @@ svg.slider-shape{
     justify-content: center;
     z-index: 1111;
 }
+
 .cases-line {
     position: absolute;
     background: #ffffff;
 }
+/* 
 .top {
     top: 15px;
     right: 15px;
     width: 100px;
     height: 2px;
 }
+
 .top-right {
     top: 15px;
     right: 15px;
     height: 100px;
     width: 2px;
 }
+
 .bottom {
     top: unset;
     bottom: 15px;
@@ -1217,15 +1244,17 @@ svg.slider-shape{
     width: 100px;
     height: 2px;
 }
+
 .bottom-left {
     top: unset;
     bottom: 15px;
     left: 15px;
     height: 100px;
     width: 2px;
-}
+} */
 
-.single-work .overlay-text:before, .single-work .overlay-text:after {
+.single-work .overlay-text:before,
+.single-work .overlay-text:after {
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -1272,8 +1301,8 @@ svg.slider-shape{
     transform: scale(1.2);
     transition: all .5s ease 0.2s;
 }
-
-.circle{
+/* 
+.circle {
     position: relative;
     z-index: 1111;
     height: 42px;
@@ -1295,7 +1324,7 @@ svg.slider-shape{
     position: absolute;
 }
 
-#team-circle-left{
+#team-circle-left {
     top: 40%;
     left: -8%;
     transition: .5s ease;
@@ -1305,7 +1334,41 @@ svg.slider-shape{
 .circle i {
     font-size: 42px;
     color: #706f6f;
+} */
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .single-work {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 2rem; /* Adjust as needed */
+    }
 }
+/* Media query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .single-work {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 2rem; /* Adjust as needed */
+    }
+
+    .single-work .title {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 15px 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .portfolio-content p {
+        text-align: center;
+    }
+}
+
 
 /* ===================================
    Blog
@@ -1318,6 +1381,18 @@ svg.slider-shape{
     background-size: cover;
     width: 95%;
     margin-left: 5%;
+}
+.section5left .main-font {
+    margin-bottom: 52px;
+    /* padding-bottom: 4rem; */
+    font-size:50px;
+    font-weight: bold;
+}
+.testimonial-item{
+    margin-bottom: 12rem;
+}
+.section5{
+    width: 100%;
 }
 
 .icon-quotes-left, .icon-quotes-right{
@@ -1388,9 +1463,10 @@ svg.slider-shape{
     color: #ffffff;
 } */
 
-.para {
+.paragraph {
     font-size: 18px;
     font-weight: 200;
+    line-height: 2.5rem;
     
 }
 
@@ -1410,12 +1486,18 @@ svg.slider-shape{
 ====================================== */
 
 .contact-sec{
-    background-image: url("../images/pexels-oleksandr-p-12960383.jpg");
+   
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 95%;
     margin-left: 5%;
+}
+
+    
+       
+.section5left .main-font {
+    margin-bottom: 52px;
 }
 
 .contact-sec .heading{
@@ -1882,6 +1964,7 @@ svg.slider-shape{
     }
 
     /* Banner */
+    
     .slider-area h1 {
         font-size: 42px;
     }
@@ -2099,4 +2182,159 @@ svg.slider-shape{
     .contact-sec .contact-details .heading {
         font-size: 24px;
     }
+}
+
+/* jelly animation for the text OQULIX in the banner */
+@keyframes jellyAnimation {
+    0%, 100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+  #jellyText:hover {
+    animation: jellyAnimation 2s infinite;
+    cursor: pointer;
+  }
+  /* Common styles for both large and small screens */
+
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-area {
+    overflow: hidden; /* Add this to hide any overflowing content */
+}
+
+/* If there's still a gray background, you can set the background color of the body or HTML element */
+body, html {
+    background-color: #000000; /* Change to the desired background color */
+}
+ 
+/* .list-unstyled li:nth-child(2)::marker{
+    content: url('agency-hotspot\images\twitter.png');
+    
+
+} */
+/* Add or modify your existing styles as needed */
+
+.video-section {
+    height: 654px;
+    overflow:hidden;
+    width: 630px;
+}
+
+/* Additional styling for the video */
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    .video-section video {
+        width: 500px;
+        height: 768px; /* Adjust the height as needed for your design */
+    }
+    .video-section{
+        height: 768px;
+    }
+}
+ul{list-style: none;}
+.portfolio-list{
+    line-height: 3rem;
+}
+.testimonial-additional-img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-additional-img img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column; /* Change to column layout on small screens */
+    }
+
+    .testimonial-additional-img {
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+}
+.banner-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Media query for small devices */
+@media only screen and (max-width: 767px) {
+    .section4right .video-section {
+        height: 0;
+        padding-top: 100%; /* This will create a square container */
+    }
+
+    .section4right video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/* Additional styling for the testimonial section */
+
+.section6left .main-font {
+    font-weight: bold;
+    /* Add your styles for the heading on the left */
+}
+
+.testimonial-item {
+    margin-bottom: 40px; /* Adjust spacing between testimonial items */
+}
+
+.testimonial-additional-img {
+  padding-left: 56px;
+}
+/*  */
+
+/* Media query for small devices */
+@media only screen and (max-width: 767px) {
+    .testimonial-item {
+        text-align: center; /* Center text and images on small screens */
+    }
+
+    .testimonial-img,
+    .testimonial-additional-img {
+        margin-top: 20px; /* Adjust spacing on small screens */
+        align-items: center;
+    }
+}
+.testimonial-bg{
+    background-image: url('../images/testimonialbg.jpg');
+    
 }
