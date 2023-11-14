@@ -2310,7 +2310,12 @@ ul{list-style: none;}
 
 .section6left .main-font {
     font-weight: bold;
+   
     /* Add your styles for the heading on the left */
+}
+.testimonial-heading{
+    font-weight: bold;
+    font-size: 48px;
 }
 
 .testimonial-item {
@@ -2337,4 +2342,21 @@ ul{list-style: none;}
 .testimonial-bg{
     background-image: url('../images/testimonialbg.jpg');
     
+}
+
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Add a media query to hide the circular image on small screens */
+@media (max-width: 767px) {
+    .testimonial-additional-img {
+        display: none;
+    }
 }
